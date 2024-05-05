@@ -1,5 +1,5 @@
 class Helper {
 
-def skipIfEmpty(input: String): Boolean = input.isEmpty
+def skipIfEmpty(input: String): Boolean = input.nonEmpty
 
 }
