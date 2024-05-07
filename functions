@@ -6,7 +6,7 @@ def getConvoyDepartureLocation(input: String): Option[String] = {
     if (input.nonEmpty) {   
         val parts = input.split(" - ")
         if (parts.nonEmpty) {
-            parts(0)
+            Some(parts(0))
         } else {
             None
         }
@@ -19,7 +19,7 @@ def getConvoyArrivalLocation(input: String): Option[String] = {
     if (input.nonEmpty) {   
         val parts = input.split(" - ")
         if (parts.nonEmpty) {
-            parts(1)
+            Some(parts(1))
         } else {
             None
         }
