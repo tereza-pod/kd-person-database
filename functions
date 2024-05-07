@@ -3,16 +3,14 @@ class Helper {
 def skipIfEmpty(input: String): Boolean = input.nonEmpty
 
 def getConvoyDepartureLocation(input: String): String = {   
-    if input.nonEmpty:    
-        input.split(" - ")(0) 
-    else:
-        pass
+    if (input.nonEmpty) {   
+        input.split(" - ")(0) }
 }
+
 def getConvoyArrivalLocation(input: String): String = {   
-    if input.nonEmpty:
+    if (input.nonEmpty) {
         input.split(" - ")(1) 
-    else:
-        pass
+    }
 }
 
 }
