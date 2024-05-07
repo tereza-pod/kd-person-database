@@ -2,7 +2,7 @@ class Helper {
 
 def skipIfEmpty(input: String): Boolean = input.nonEmpty
 
-def getConvoyDepartureLocation(input: String): Option[String] = {   
+def getConvoyDepartureLocation(input: String): String = {   
     if (input.nonEmpty) {   
         val parts = input.split(" - ")
         if (parts.nonEmpty) {
@@ -15,7 +15,7 @@ def getConvoyDepartureLocation(input: String): Option[String] = {
     }
 }
 
-def getConvoyArrivalLocation(input: String): Option[String] = {   
+def getConvoyArrivalLocation(input: String): String = {   
     if (input.nonEmpty) {   
         val parts = input.split(" - ")
         if (parts.nonEmpty) {
