@@ -2,4 +2,10 @@ class Helper {
 
 def skipIfEmpty(input: String): Boolean = input.nonEmpty
 
+def splitTransportLocations(input: String): (Array[String], String, String) = {
+  parts = input.split(" - ")
+  entity1 = if (parts.length >= 1) parts(0) else ""
+  entity2 = if (parts.length >= 2) parts(1) else ""
+}
+
 }
