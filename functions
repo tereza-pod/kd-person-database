@@ -2,12 +2,12 @@ class Helper {
 
 def skipIfEmpty(input: String): Boolean = input.nonEmpty
 
-def getConvoyDepartureLocation(input: String): String = {   
+def getConvoyDepartureLocation(input: Any): String = {   
     if (input.nonEmpty) {   
         input.split(" - ")(0) }
 }
 
-def getConvoyArrivalLocation(input: String): String = {   
+def getConvoyArrivalLocation(input: Any): String = {   
     if (input.nonEmpty) {
         input.split(" - ")(1) 
     }
