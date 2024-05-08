@@ -14,10 +14,6 @@ def getConvoyArrivalLocation(input: String): String = {
     else ""
 }
 
-def addKV(input: String): String = {   
-    if (input.isEmpty) "KV"
-    else input
-}
 
 
 }
