@@ -22,4 +22,14 @@ def concatenateDate(month: String, day: String, year: String): String = {
       ""
 }
 
+def getGender(input: String): String = {   
+    if (input.nonEmpty && input== "f") { 
+        "female"
+    }
+    else if (input.nonEmpty && input== "m") {
+        "male"
+    }
+    else ""
+}
+
 }
