@@ -14,6 +14,13 @@ def getConvoyArrivalLocation(input: String): String = {
     else ""
 }
 
-
+def concatenateDate(month: String, day: String, year: String): String = {
+    if (month.nonEmpty && day.nonEmpty && year.nonEmpty) {
+      year + "-" + month + "-" + day
+    } 
+    else {
+      ""
+    }
+}
 
 }
